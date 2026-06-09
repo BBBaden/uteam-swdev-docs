@@ -16,8 +16,11 @@ Dokumentation für das U-Team *Software Development*.
 Eine lokale Umgebung braucht nur aufgesetzt werden, wenn ...
 - am Mechanismus selbst entwickelt wird.
 - eine lokale Vorschau der Seiten gewünscht ist.
+- eine lokale Vorschau des CHANGELOG.md gewünscht ist.
 
 </div>
+
+### MkDocs aufsetzen
 
 - Python venv erstellen, z.B. `uv venv --with-pip` oder `python -m venv create .venv`
 - Python venv aktivieren: `. ./venv/Scripts/activate` oder `.\.venv\Scripts\activate`
@@ -26,3 +29,10 @@ Eine lokale Umgebung braucht nur aufgesetzt werden, wenn ...
 
 
 Für Details zu MkDocs: [mkdocs.org](https://www.mkdocs.org).
+
+### git-cliff aufsetzen
+
+Offizielle Webseite: [git-cliff.org](https://git-cliff.org/).
+
+- Installation unter Windows: `winget install --source winget -e orhun.git-cliff`
+- Neues Changelog erstellen: `git-cliff -o CHANGELOG.md`
