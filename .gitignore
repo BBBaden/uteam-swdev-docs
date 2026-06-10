@@ -1,6 +1,9 @@
 # PROJECT SPECIFIC STUFF
 # ----------------------------------------------------------------------
 
+# if you run mkdocs build locally
+site/
+
 .env
 
 *.pyo
