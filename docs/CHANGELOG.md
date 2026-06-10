@@ -8,6 +8,11 @@ Im nachfolgenden werden alle Änderungen gelistet.
 
 - Dokumentationskonzept beschrieben ([12c69dc](https://github.com/BBBaden/uteam-swdev-docs/commit/12c69dcd99977c7832bd67852c143d971b29a129)), closes [#2](https://github.com/BBBaden/uteam-swdev-docs/issues/2)
 - Coding Guidelines hinzugefügt ([e494ef2](https://github.com/BBBaden/uteam-swdev-docs/commit/e494ef2a534954c7e34123b7e55f564e9736ef62)), closes [#9](https://github.com/BBBaden/uteam-swdev-docs/issues/9)
+- Test-Framework dokumentiert ([9066422](https://github.com/BBBaden/uteam-swdev-docs/commit/9066422ccc356e1d936f6c9e1d738dc2c3ebee24)), closes [#10](https://github.com/BBBaden/uteam-swdev-docs/issues/10)
+
+### 🐛 Korrekturen
+
+- Einrückungen der Listen korrigiert ([0609ef7](https://github.com/BBBaden/uteam-swdev-docs/commit/0609ef77ed86e52d52c0edfd8b646f6e7c7129ef)), closes [#8](https://github.com/BBBaden/uteam-swdev-docs/issues/8)
 
 ### 🛠️ Tooling
 
