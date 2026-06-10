@@ -31,6 +31,7 @@ Diese werden von unterschiedlichen Artefakten beantwortet:
 ## Format der Commit-Message
 
 Die Commit-Message muss wie folgt formatiert sein (siehe Beispiel weiter unten):
+
 - Erste Zeile im Format `${SCOPE}: ${SUMMARY}`
 - Leerzeile
 - Optional
