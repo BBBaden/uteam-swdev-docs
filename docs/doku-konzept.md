@@ -25,8 +25,8 @@ Diese werden von unterschiedlichen Artefakten beantwortet:
 - Commit im Repo erstellen.
 - Commit ins Repo pushen
 - GitHub übernimmt automatisch
-  - Aktualisierung von CHANGELOG.md
-  - Schliesst das Issue (mit Referenz zu diesem Commit)
+    - Aktualisierung von CHANGELOG.md
+    - Schliesst das Issue (mit Referenz zu diesem Commit)
 
 ## Format der Commit-Message
 
@@ -35,8 +35,8 @@ Die Commit-Message muss wie folgt formatiert sein (siehe Beispiel weiter unten):
 - Erste Zeile im Format `${SCOPE}: ${SUMMARY}`
 - Leerzeile
 - Optional
-  - längerer Text mit Details
-  - Leerzeile
+    - längerer Text mit Details
+    - Leerzeile
 - `closes #issue`
 
 Beispiel:
