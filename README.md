@@ -4,7 +4,8 @@ Dokumentation für das U-Team *Software Development*.
 
 ## Wichtige Links
 
-- [Konzept zur Dokumentation](./docs/doku-konzept.md)
+- [Deployte Seite](https://bbbaden.github.io/uteam-swdev-docs/)
+- Konzept zur Dokumentation: [Markdown Source](./docs/doku-konzept.md), [live](https://bbbaden.github.io/uteam-swdev-docs/doku-konzept/)
 
 
 ## Lokale Entwicklungsumgebung aufsetzen
