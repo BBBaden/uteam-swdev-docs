@@ -1,1 +1,3 @@
 site_name: U-Team Software-Entwicklung
+theme:
+  name: readthedocs
