@@ -2,6 +2,13 @@
 
 Im nachfolgenden werden alle Änderungen gelistet.
 
+## [v0.0.3](https://github.com/BBBaden/uteam-swdev-docs/tree/v0.0.3/) - 2026-06-11
+[Änderungen v0.0.2 &rarr; v0.0.3](https://github.com/BBBaden/uteam-swdev-docs/-/compare?from=v0.0.2&to=v0.0.3)
+
+### 🧹 Aufräumen
+
+- Neuen Workflow dokumentieren ([e9df14e](https://github.com/BBBaden/uteam-swdev-docs/commit/e9df14ea940be350577865a418c26a4c06be0f1f))
+
 ## [v0.0.2](https://github.com/BBBaden/uteam-swdev-docs/tree/v0.0.2/) - 2026-06-11
 
 ### ✨ Neu hinzugefügt
