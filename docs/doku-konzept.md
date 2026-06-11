@@ -22,11 +22,10 @@ Diese werden von unterschiedlichen Artefakten beantwortet:
 ## Normaler Workflow
 
 - Dokumentation unterhalb `/docs` erstellen, die ein Issue bearbeitet. (Egal, ob neue Datei oder Modifikation.)
-- Commit im Repo erstellen.
+- Commit im Repo erstellen (Commit Message mit Referenz zu diesem Issue, s.u.).
 - Commit ins Repo pushen
-- GitHub übernimmt automatisch
-    - Aktualisierung von CHANGELOG.md
-    - Schliesst das Issue (mit Referenz zu diesem Commit)
+- GitHub schliesst das Issue (mit Referenz zu diesem Commit)
+- Bei Bedarf: Neue Version der Doku releasen (s.u.)
 
 ## Format der Commit-Message
 
@@ -69,5 +68,5 @@ Die folgenden *Scopes* werden in der Commit-Message berücksichtigt:
 
 ## Neues Release
 
-- **Annotated Tag** mit Version erstellen: `git tag -a -m 'v1.7.3' v1.7.3`
-- Tag pushen `git push --follow-tags`
+- Jetzige Version anschauen (Startseite oder Changelog)
+- Auf GitHub die Action "Release" ausführen und eine neue Versionsnummer vergeben
