@@ -2,7 +2,7 @@
 
 Im nachfolgenden werden alle Änderungen gelistet.
 
-## [unversioniert](https://github.com/BBBaden/uteam-swdev-docs/tree/main)
+## [v0.0.2](https://github.com/BBBaden/uteam-swdev-docs/tree/v0.0.2/) - 2026-06-11
 
 ### ✨ Neu hinzugefügt
 
@@ -26,6 +26,8 @@ Im nachfolgenden werden alle Änderungen gelistet.
 - GitHub Pages deployen ([5b7f456](https://github.com/BBBaden/uteam-swdev-docs/commit/5b7f45638bbb42964983e30e5106d785727f1611)), closes [#4](https://github.com/BBBaden/uteam-swdev-docs/issues/4)
 - Sha in requirements.txt entfernen ([535ef04](https://github.com/BBBaden/uteam-swdev-docs/commit/535ef042ddfd7c1459dbaf8c39af5135bafa89f7))
 - Changelog auf bestimmte Muster begrenzen ([211a4f0](https://github.com/BBBaden/uteam-swdev-docs/commit/211a4f09d60fee31d616a90a084d45cf644003b3)), closes [#5](https://github.com/BBBaden/uteam-swdev-docs/issues/5)
+- Expliziter Release-Workflow ([bbf199e](https://github.com/BBBaden/uteam-swdev-docs/commit/bbf199eba3e427b5e5483c74dfeb4466b32180fe)), closes [#11](https://github.com/BBBaden/uteam-swdev-docs/issues/11)
+- Fussnoten korrekt anzeigen ([e420381](https://github.com/BBBaden/uteam-swdev-docs/commit/e420381a30988b74fc4ed9517657904e1fef5224)), closes [#14](https://github.com/BBBaden/uteam-swdev-docs/issues/14)
 
 ### 🧹 Aufräumen
 

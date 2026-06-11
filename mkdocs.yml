@@ -9,5 +9,5 @@ markdown_extensions:
   - footnotes
 
 extra:
-  version_tag: 0.0.1
+  version_tag: v0.0.2
   release_date: 2026-06-11
