@@ -1,3 +1,10 @@
 site_name: U-Team Software-Entwicklung
 theme:
   name: readthedocs
+
+plugins:
+  - macros
+
+extra:
+  version_tag: 0.0.1
+  release_date: 2026-06-11

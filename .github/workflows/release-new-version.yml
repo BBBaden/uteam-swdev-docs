@@ -1,0 +1,82 @@
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version (z.B. v1.2.3)'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Validate Version Format
+        run: |
+          if [[ ! "${{ github.event.inputs.version }}" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "Ungültiges Versionsformat. Erwartet: v{MAJOR.MINOR.PATCH}"
+            exit 1
+          fi
+
+      - name: Check Tag does not exist
+        run: |
+          if git rev-parse "${{ github.event.inputs.version }}" >/dev/null 2>&1; then
+            echo "Tag ${{ github.event.inputs.version }} existiert bereits."
+            exit 1
+          fi
+
+      - name: Generate Changelog
+        uses: orhun/git-cliff-action@v4
+        with:
+          config: cliff.toml
+          args: --verbose --tag ${{ github.event.inputs.version }}
+        env:
+          OUTPUT: docs/CHANGELOG.md
+
+      - name: Write Version to mkdocs.yml
+        run: |
+          sed -i "s/version_tag:.*/version_tag: ${{ github.event.inputs.version }}/" mkdocs.yml
+          sed -i "s/release_date:.*/release_date: $(date -u '+%Y-%m-%d')/" mkdocs.yml
+
+      - name: Commit, Tag & Push
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add docs/CHANGELOG.md mkdocs.yml
+          git diff --staged --quiet || git commit -m "chore: Release ${{ github.event.inputs.version }}" && git push
+          git tag -a ${{ github.event.inputs.version }} -m "Release ${{ github.event.inputs.version }}"
+          git push origin ${{ github.event.inputs.version }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build MkDocs Site
+        run: mkdocs build
+
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
